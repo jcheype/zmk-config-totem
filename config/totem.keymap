@@ -24,13 +24,10 @@
 
 &mt {
     quick-tap-ms = <100>;
-    flavor = "tap-preferred";
+    flavor = "balanced";
 };
 
-&lt {
-    quick-tap-ms = <100>;
-    require-prior-idle-ms = <125>;
-};
+&lt { quick-tap-ms = <100>; };
 
 / {
     behaviors {
@@ -39,8 +36,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <100>;
-            flavor = "tap-preferred";
-            require-prior-idle-ms = <125>;
+            flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
     };
