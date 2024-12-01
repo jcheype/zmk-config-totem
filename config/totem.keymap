@@ -22,12 +22,9 @@
 #define TVP1 4
 #define TVP2 5
 
-&mt {
-    quick-tap-ms = <100>;
-    flavor = "balanced";
-};
+&mt { quick-tap-ms = <200>; };
 
-&lt { quick-tap-ms = <100>; };
+&lt { quick-tap-ms = <200>; };
 
 / {
     behaviors {
@@ -35,7 +32,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <100>;
+            quick-tap-ms = <200>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
