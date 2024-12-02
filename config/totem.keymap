@@ -52,6 +52,11 @@
             key-positions = <11 12 13>;
             bindings = <&tog 0>;
         };
+
+        semi {
+            bindings = <&kp SEMI>;
+            key-positions = <29 30>;
+        };
     };
 
     keymap {
